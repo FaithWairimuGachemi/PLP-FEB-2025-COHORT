@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML LISTS,TABLES, IMAGES & FORMS
+        </title>
+    </head>
+    <body>
+        <h1>HTML Lists</h1>
+        <h3>Ordered lists</h3>
+        <ol type="a" start="3">
+            <li>Software Engineering</li>
+            <li>Web Development</li>
+            <li>Python</li>
+            <li>Database</li>
+            <li>Startup Building</li>
+        </ol>
+        <h3>Unordered Lists</h3>
+        <ul type="bullet" >
+            <li>Faith</li>
+            <li>Wairimu</li>
+            <li>Gachemi</li>
+            <li>Mary</li>
+        </ul>
+        <h3>Defination List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascaded Styling Sheet</dd>
+            <dt>SQL</dt>
+            <dd>Structured Query Language</dd>
+        </dl>
+        <h1>HTML Images</h1>
+        <img src="Week2plp/SPK_6549.NEF" alt="A picture of me in MUCISA Hackathon">
+        <h1>HTML Tables</h1>
+        <table border="1">
+           <thead>
+            <tr>
+                <th colspan="1">Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+           </thead>
+            <tbody>
+                <tr>
+                    <td>Faith</td>
+                    <td>faithnimoh7@gmail.com</td>
+                    <td>0797460219</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>john@gmail.com</td>
+                    <td>0798654312</td>
+                </tr>
+            </tbody>
+            <tfoot>Student Data</tfoot>
+        </table>
+        <h1>HTML Forms</h1>
+        <form action="" method=""></form>
+        <label for="Name">Name</label>
+        <input type="text" id="student_name" name="student_name" required>
+        <br>
+        <label for="gender">Gender</label>
+        <input type="radio" id="gender" value="Female">Female
+        <input type="radio" id="gender" name="gender" value="Male">Male
+        <br>
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" name="hobbies" value="Sports">Sports
+        <input type="checkbox" name="hobbies" value="music">Music
+        <input type="checkbox" name="hobbies" value="Art">Art
+        <input type="checkbox" name="hobbies" value="travel">Travel
+        <br>
+        <label for="Country">Country</label>
+        <Select name="Country" id="country">
+            <option>---Select Country---</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Ethiopia">Ethiopia</option>
+        </Select>
+        <br>
+        <label  for="description">Describe Yourself</label>
+        <textarea id="description" name="description"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </body>
+</html>
