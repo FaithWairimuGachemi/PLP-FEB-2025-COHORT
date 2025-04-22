@@ -39,3 +39,37 @@ class BMW:
                 f"Color: {self.color}, Horsepower: {self.horsepower} HP, "
                 f"Fuel Type: {self.fuel_type}, Mileage: {self.mileage} km, "
                 f"Status: {self.status}")
+
+# assignment 2
+
+
+class Car:
+    def move(self):
+        # Car moves by driving
+        print("Driving ")
+
+class Plane:
+    def move(self):
+        # Plane moves by flying
+        print("Flying ")
+
+class Dog:
+    def move(self):
+        # Dog moves by running
+        print("Running ")
+
+def main():
+    # Create instances of each class
+    car = Car()
+    plane = Plane()
+    dog = Dog()
+
+    # List of objects with move() method
+    movers = [car, plane, dog]
+
+    # Call move() on each object
+    for mover in movers:
+        mover.move()
+
+if __name__ == "__main__":
+    main()
