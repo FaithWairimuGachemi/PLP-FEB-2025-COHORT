@@ -1,18 +1,22 @@
 --Question 1
-CREATE TABLE student (
-    id INT PRIMARY KEY,
-    fullName VARCHAR(100),
-    age INT
-);
+SELECT paymentDate, SUM(amount) AS totalPayment
+FROM payments
+GROUP BY paymentDate
+ORDER BY paymentDate DESC
+LIMIT 5;
 
---question 2
-INSERT INTO student (id, fullName, age) 
-VALUES 
-(1, 'Faith ', 25),
-(2, 'Mary', 35),
-(3, 'Simon', 45);
+--Question 2
+SELECT customerName, country, AVG(creditLimit) AS averageCreditLimit
+FROM customers
+GROUP BY customerName, country;
 
---question 3
-UPDATE student
-SET age = 25
-WHERE id = 3;
+
+--Question 3
+SELECT productCode, quantityOrdered, SUM(priceEach * quantityOrdered) AS totalPrice
+FROM orderdetails
+GROUP BY productCode, quantityOrdered;
+
+--Question 4
+SELECT checkNumber, MAX(amount) AS highestPayment
+FROM payments
+GROUP BY checkNumber;
