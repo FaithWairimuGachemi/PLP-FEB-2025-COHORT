@@ -1,25 +1,18 @@
---query to retrieve
-SELECT checkNumber, paymentDate, amount
-FROM payments;
+--Question 1
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+);
 
---query to retrive and sort
-SELECT orderDate, requiredDate, status
-FROM orders
-WHERE status = 'In Process'
-ORDER BY orderDate DESC;
+--question 2
+INSERT INTO student (id, fullName, age) 
+VALUES 
+(1, 'Faith ', 25),
+(2, 'Mary', 35),
+(3, 'Simon', 45);
 
---query to display selected and sort
-SELECT firstName, lastName, email
-FROM employees
-WHERE jobTitle = 'Sales Rep'
-ORDER BY employeeNumber DESC;
-
---query to retrieve all
-SELECT *
-FROM offices;
-
---query to fetch with limits
-SELECT productName, quantityInStock
-FROM products
-ORDER BY buyPrice ASC
-LIMIT 5;
+--question 3
+UPDATE student
+SET age = 25
+WHERE id = 3;
